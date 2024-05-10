@@ -8,7 +8,7 @@ public class Main {
 
         System.out.println("Исходный массив: " + Arrays.toString(numbers));
 
-        // Ищем первое отрицательное число
+
         int firstNegativeIndex = -1;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] < 0) {
@@ -17,7 +17,6 @@ public class Main {
             }
         }
 
-        // Считаем среднее арифметическое положительных чисел после первого отрицательного числа
         double sumOfPositives = 0;
         int countOfPositives = 0;
         for (int i = firstNegativeIndex + 1; i < numbers.length; i++) {
