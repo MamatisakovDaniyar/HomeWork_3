@@ -4,9 +4,15 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("----------------------------------------------------");
 
-       double[] numbers = {0.5, 0.25, -0.5, -0.25, 0.125, 0.0625, -0.125, -0.0625, 0.03125, 0.015625, -0.03125, -0.015625, 0.0078125, 0.00390625, -0.0078125};
+       double[] numbers = {0.5, 0.25, -0.5, -0.25, 0.125, 0.0625, -0.125, -0.0625,
+               0.03125, 0.015625, -0.03125, -0.015625, 0.0078125, 0.00390625, -0.0078125};
+       boolean flag =false;
 
         System.out.println("Исходный массив: " + Arrays.toString(numbers));
+        for (double elements : numbers) {
+            if (elements < 0){
+                flag = true;
+            }
 
 
         int firstNegativeIndex = -1;
@@ -30,7 +36,7 @@ public class Main {
             System.out.println("Среднее арифметическое положительных чисел после первого отрицательного числа: " + mean);
         }
     }
-}
+}}
 
 
 
