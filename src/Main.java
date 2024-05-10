@@ -26,6 +26,10 @@ public class Main {
                 countOfPositives++;
             }
         }
+        if (countOfPositives > 0) {
+            double mean = sumOfPositives / countOfPositives;
+            System.out.println("Среднее арифметическое положительных чисел после первого отрицательного числа: " + mean);
+        }
     }
 }
 
